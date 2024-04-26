@@ -1,0 +1,25 @@
+doctype html
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Inicio
+    link(rel="stylesheet", href="/css/index.css")
+  body
+    header.topheader
+      include header.pug
+    div.horizontal-padding.vertical-padding
+      section.profile#profile
+        div.profile-info
+          h1.profile-title
+            | Bienvenido, soy #{usuario} 
+            br
+            | #{apellido}
+          p.profile-details
+            | #{profileDetails}
+            br
+            br
+          a.custom-button(href="habilidades") Descubre mis habilidades
+        div.profile-img-section
+          img.profile-img(height="400", width="400", src=`${imgUrl}`, alt="avatar")

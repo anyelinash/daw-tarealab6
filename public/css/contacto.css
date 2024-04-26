@@ -1,0 +1,65 @@
+.container2 {
+    padding: 20px;
+}
+
+
+.btn-primary {
+    border-radius: 5px; /* Hacer los bordes redondeados en el botón de enviar */
+}
+
+.container {
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+  }
+
+  .container1 {
+    text-align: center;
+    background-color: var(--secundary-color);
+  }
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .description {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+/* Estilo base del botón */
+.custom-button {
+    background-color:  var(--primary-color);
+    color: var(--text-color-inverse);
+    border: none; /* Quitamos el borde */
+    padding: 10px 20px; 
+    cursor: pointer; /* Cambiamos el cursor */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+/* Estilo para cuando el cursor pasa sobre el botón */
+.contact-container {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+.custom-button:hover {
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+}
+.contact-form {
+    border: 1px solid var(--secundary-color);
+    padding: 50px;
+    flex-basis: 60%;
+    border-radius: 10px; /* Hacer los bordes redondeados */
+  }
+  .contact-info {
+    background-color: var(--secundary-color);
+    flex-basis: 35%;
+    padding: 50px;
+    border-radius: 10px; /* Hacer los bordes redondeados */
+  }
+  li{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+  }

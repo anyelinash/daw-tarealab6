@@ -1,0 +1,40 @@
+:root{
+    --theme-color: #FFFFFF;
+    --primary-color: #000000;
+    --secundary-color: #6BA6A7;
+    --text-color-inverse: white;
+    --text-color: black;
+    --navbar-shallow-color: #E6E0E0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+section[id]{
+    scroll-margin-top: 100px;
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    padding-top: 70px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+.horizontal-padding{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.vertical-padding{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

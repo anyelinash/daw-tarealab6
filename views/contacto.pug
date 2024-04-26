@@ -1,0 +1,44 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title ArtVibe
+    link(rel='stylesheet', href='/css/contacto.css')
+  body
+    header.topheader
+      include header.pug
+    div.container
+      div.title Contáctanos
+      div.description ¿Tienes alguna pregunta o estás interesado en nuestros servicios? ¡Estamos aquí para ayudarte! Ponte en contacto con nosotros utilizando el formulario a continuación y nos pondremos en contacto contigo lo antes posible.
+    div.container2.contact-container
+      div.contact-form
+        h2.text-center Formulario de Contacto
+        form#contactForm
+          div.mb-3
+            label(for='nombre', class='form-label') Nombre:
+            input(type='text', class='form-control', id='nombre', name='nombre', required)
+          div.mb-3
+            label(for='email', class='form-label') Email:
+            input(type='email', class='form-control', id='email', name='email', required)
+          div.mb-3
+            label(for='telefono', class='form-label') Teléfono:
+            input(type='tel', class='form-control', id='telefono', name='telefono', required)
+          div.mb-3
+            label(for='mensaje', class='form-label') Mensaje:
+            textarea.form-control(id='mensaje', name='mensaje', rows='5', required)
+          button.custom-button(type='submit', style='margin-top: 10px;') Enviar
+      
+      div.contact-info
+        h2.text-center Información de Contacto
+        ul
+          li
+            strong Dirección:
+            |  #{direccion}
+          li
+            strong Teléfono:
+            |  #{telf}
+          li
+            strong Email:
+            |  #{email}

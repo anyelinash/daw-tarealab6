@@ -1,0 +1,51 @@
+.profile-info{
+    margin-bottom: 0px;
+}
+
+.profile-img{
+    border-radius: 100%;
+}
+
+.profile-img-section{
+    position: relative;
+}
+
+.profile{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.profile-title{
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.profile-details{
+    font-size: 20px;
+    line-height: 1.4;
+    max-width: 500px;
+    margin: 30px 0;
+}
+
+/* Estilo base del botón */
+.custom-button {
+    color: var(--text-color-inverse);
+    border: none; /* Quitamos el borde */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambiamos el cursor */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    background-color: var(--primary-color);
+}
+
+/* Estilo para cuando el cursor pasa sobre el botón */
+.custom-button:hover {
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+}
